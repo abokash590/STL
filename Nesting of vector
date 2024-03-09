@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    // Vector of pair
+    vector<pair<int, int>> v = {{1, 2}, {3, 4}, {2, 3}};
+    for (auto value : v)
+    {
+        cout << value.first << " " << value.second << endl;
+    }
+    cout << "*******************" << endl;
+    int x, y;
+    cin >> x >> y;
+    cout << "*******************" << endl;
+    v.push_back({x, y});
+    for (auto value : v)
+    {
+        cout << value.first << " " << value.second << endl;
+    }
+    v.pop_back();
+    cout << "*******************" << endl;
+    for (auto value : v)
+    {
+        cout << value.first << " " << value.second << endl;
+    }
+    sort(v.begin(), v.end());
+    cout << "*******************" << endl;
+    for (auto value : v)
+    {
+        cout << value.first << " " << value.second << endl;
+    }
+    cout << "*******************" << endl;
+    cout << "*******************" << endl;
+
+    // Array of vector
+    vector<int> v1[5];
+    //There is 5 array.Its like 2D array. The diffrence is row is not changbale, but we can change the colomn of ""each" vector[colomn]. 
+
+
+    //Vector of vector
+    vector<vector<int>> v2;
+    //Its like 2D array. But the number of vector is changable. And the element of each vector is changable.
+}
