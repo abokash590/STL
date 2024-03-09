@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    // MAP::sorted
+    // syntex :- map<key,value> mp;
+    map<int, string> mp;
+    mp[1] = "abc";
+    mp[4] = "adr";
+    mp.insert({2, "abs"});
+    for (auto &value : mp)
+    {
+        cout << value.first << " " << value.second << endl;
+    }
+    cout << "***************************" << endl;
+    //UNORDERED MAP :: randomly
+    unordered_map<string, int> m;
+    m.insert({"rtx", 1});
+    m.insert({"atx", 123});
+    m.insert({"3tx", 13});
+    m.insert({"4tx", 1});
+    for (auto &s : m)
+    {
+        cout << s.first << " " << s.second << endl;
+    }
+}
