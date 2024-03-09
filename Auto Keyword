@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    // WORKS FROM C++ 11 VERSION.
+
+    vector<int> v = {1, 2, 3, 5, 69};
+    // Range based loops
+    for (auto value : v) // value variable is copying element from vector.
+    {
+        cout << value << " ";
+    }
+    cout << endl;
+    cout << "*******************" << endl;
+    // Auto keyword
+    vector<int> v1 = {11, 22, 32, 54, 69};
+    for (auto value : v1)
+    {
+        cout << value << " ";
+    }
+    cout << endl;
+}
