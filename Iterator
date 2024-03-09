@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    // Iterator is like pointer.every conteiner does not have idex. So, iterate of container is not possible.
+    // syntex :-container :: itretor it;
+    vector<int> v(4, 3);
+    vector<int>::iterator it = v.begin();
+    for (it; it != v.end(); it++)
+    {
+        cout << *it << endl;
+    }
+    cout << "***********************" << endl;
+    vector<pair<int, int>> v1 = {{1, 2}, {2, 3}, {3, 4}};
+    vector<pair<int, int>>::iterator itt;
+
+    ///type1
+    for (itt = v1.begin(); itt != v1.end(); itt++)
+    {
+        cout << (*itt).first << " " << (*itt).second << endl;
+    }
+    cout << "***********************" << endl;
+    
+    //type2
+    for (itt = v1.begin(); itt != v1.end(); itt++)
+    {
+        cout << itt->first << " " << itt->second << endl;
+    }
+    //if we use more than one iteretor, name of every iteretor must have to different.
+}
