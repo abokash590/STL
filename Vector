@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int> v;
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        int x;
+        cin >> x;
+        v.push_back(x);
+    }
+    for (auto value : v)
+    {
+        cout<<value<< " ";
+    }
+
+    vector<int> v1(5);
+    //this vector initialized by 5. where every element is 0.
+    vector<int> v2(5,4);
+    //this vector initialized by 5. where every element is 4.
+}
