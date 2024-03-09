@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+//1
+    pair<int, string> p;
+    p = make_pair(2, "abc");//T1
+    p = {2, "abc"};//T2
+    cout << p.first << " " << p.second << endl;
+
+//2
+    int a[] = {1, 2, 3};
+    int b[] = {2, 3, 4};
+    pair<int, int> p_arr[3];
+    for (int i = 0; i < 3; i++)
+    {
+        p_arr[i] = {a[i], b[i]};
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        cout << p_arr[i].first << " " << p_arr[i].second << endl;
+    }
+}
