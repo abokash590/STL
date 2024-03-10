@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long in;
+int main()
+{
+    // all_of :: returns true or false.
+    vector<in> v = {2, -3, 4};
+    cout<<all_of(v.begin(),v.end(),[](in x){return x>0;})<<endl;
+    cout<<any_of(v.begin(),v.end(),[](in x){return x>0;})<<endl;
+    cout<<none_of(v.begin(),v.end(),[](in x){return x>0;})<<endl;//if all are not.
+}
