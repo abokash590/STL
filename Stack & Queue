@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    stack<int> s;
+    s.push(4);
+    s.push(5);
+    s.push(6);
+    s.push(7);
+    while (!s.empty())
+    {
+        cout<<s.top();
+        s.pop();
+    }
+
+
+    queue<string> q;
+    q.push("ab");
+    q.push("ac");
+    q.push("ad");
+    q.push("ae");
+    while (!s.empty())
+    {
+        cout<<q.front();
+        s.pop();
+    }
+}
