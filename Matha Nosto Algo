@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long in;
+int main()
+{
+    // vector
+    vector<in> v = {2, 1, 4, 8, 5, 4, 6, 3};
+    cout << *min_element(v.begin(), v.end()) << endl;
+    cout << *max_element(v.begin(), v.end()) << endl;
+    cout << accumulate(v.begin(), v.end(), 0) << endl; // in here 0 is initial of sum;
+    cout << count(v.begin(), v.end(), 2) << endl;      // how many times 2 is present at the vector v.
+    auto it = find(v.begin(), v.end(), 2);
+    if (it != v.end())
+    {
+        cout << *it << endl;
+    }
+    else
+    {
+        cout << "Not Found" << endl;
+    }
+    cout << endl;
+    reverse(v.begin(), v.end()); // reverse the vector
+    for (auto va : v)
+    {
+        cout << va << " ";
+    }
+    cout << endl;
+    // array
+    in a[5]{4, 3, 6, 7, 8};
+    cout << *min_element(a, a + 5) << endl;
+    cout << *max_element(a, a + 5) << endl;
+    cout << accumulate(a, a + 5, 0) << endl;
+    cout << count(a, a + 5, 2) << endl;
+
+    // string
+    string s = "Tawhid";
+    reverse(s.begin(), s.end());
+    cout << s << endl;
+}
