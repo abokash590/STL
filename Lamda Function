@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long in;
+int main()
+{
+    //lamda function
+    cout<<[](int x,int y){return x+y;}(3,7)<<endl;
+
+    //for reuse
+    auto sum=[](int x,int y){return x+y;};
+    cout<<sum(1,5)<<endl;
+}
