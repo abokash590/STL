@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long in;
+in lcd(int a, int b)
+{
+    return (a * b) / __gcd(a, b);
+}
+// stl: step1
+
+in gcd(int a, int b)
+{
+    if (a % b == 0)
+    {
+        return b;
+    }
+    return gcd(b, a % b);
+}
+int main()
+{
+    in a, b;
+    cin >> a >> b;
+    cout << gcd(a, b) << endl;
+
+    // stl :step2:function
+    cout << __gcd(a, b) << endl;
+
+    cout << lcd(a, b) << endl;
+}
