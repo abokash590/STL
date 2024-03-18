@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    priority_queue<int> pq; // highest will be at top
+    pq.push(5);
+    pq.push(2);
+    pq.push(8);
+
+    cout << pq.top() << '\n';
+
+    priority_queue<int, vector<int>, greater<int>> p; // lowest will be at top
+    p.push(5);
+    p.push(2);
+    p.push(8);
+
+    cout << p.top() << '\n';
+}
