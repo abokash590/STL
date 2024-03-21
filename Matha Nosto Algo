@@ -35,5 +35,6 @@ int main()
     // string
     string s = "Tawhid";
     reverse(s.begin(), s.end());
+    s.substr(4,3) //in here 4 is the starting index & 3 is the next 3 character.
     cout << s << endl;
 }
