@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    // bitwise oparetor is much more faster than arithmatic oparetion
+    int n;
+    cin >> n;
+    if ((n & (n - 1)) == 0&&n!=0)cout << "power of 2\n";//power of 2 or not.
+    if((n&1)==0)cout << "even";//even or odd
+    if((n&(1<<4))==1)cout << "4th bit of n is 1 or not";//checking the kth bit is 1 or 0.
+    
+    //divide by 2^k = (n>>k)
+    cout<<(n>>1)<<endl;//divide n by 2^1=n right shifted by 1;
+    cout<<(n>>4)<<endl;//divide n by 2^4=n right shifted by 4;
+
+    //multiply with 2^k = (n<<k)
+    cout<<(n<<2)<<endl;//multiply n with 2^2=n left shifted by 2;
+    cout<<(n<<3)<<endl;//multiply n with 2^3=n left shifted by 3;
+
+    //n%2^k==((1<<k)-1) module operator
+
+    //
+}
