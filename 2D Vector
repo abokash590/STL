@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+      vector<vector<char>> v;
+        vector<char>r;
+        r.push_back(2);
+        r.push_back(4);
+        r.push_back(6);
+        r.push_back(8);
+        v.push_back(r);
+        vector<char>r1;
+        r1.push_back(2);
+        r1.push_back(4);
+        r1.push_back(6);
+        r1.push_back(8);
+        v.push_back(r1);
+}
