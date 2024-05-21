@@ -19,7 +19,7 @@ int main()
 
     //n%2^k==((1<<k)-1) module operator
 
-    //
+    //builtin_operatio
     int x;
     cin>>x;
     cout<<__builtin_popcount(x);  //it counts '1' in x binary version;
