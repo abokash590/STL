@@ -9,7 +9,7 @@ int main(){
     bitset<5> variable_name3("101");//this string is binary string.
 
     //Function
-    //Eigula value cng kore fele
+    //Eigula value  cng kore fele
     cout<<variable_name3.set()<<endl; //All bit will be 1.
     cout<<variable_name3.reset()<<endl; //All bit will be 0.
     cout<<variable_name3.flip()<<endl; //0->1,1->0
