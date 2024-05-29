@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    //Mission Pupil
+
+    //Initialization types
+    bitset<5> variable_name1;//5 means 5 bits.
+    bitset<5> variable_name2(7);//7 is binary value.<Decimal to Binary>
+    bitset<5> variable_name3("101");//this string is binary string.
+
+    //Function
+    //Eigula value cng kore fele
+    cout<<variable_name3.set()<<endl; //All bit will be 1.
+    cout<<variable_name3.reset()<<endl; //All bit will be 0.
+    cout<<variable_name3.flip()<<endl; //0->1,1->0
+    
+    //count
+    cout<<variable_name3.count()<<endl; //couts 1 in binary value.
+    cout<<variable_name3.size()<<endl; //size of binary bits.
+
+    //test
+    cout<<variable_name3.test(0)<<endl; //0 is is index.index is left to right. it retuns bool value.if 0'th index is set.it will return true/1,else false/0;
+    cout<<variable_name3.any(); //Checks if any bit is set.
+    cout<<variable_name3.none(); //Checks if none bit is set.
+    cout<<variable_name3.all(); //Check if all bit is set.
+
+    //conversion
+    cout<<variable_name2.to_string(); //Converts bitset to std::string.
+    cout<<variable_name3.to_ulong(); //Converts bitset to unsigned long.
+    cout<<variable_name3.to_ullong(); //Converts bitset to unsigned long long.
+    bitset<5> variable_name2(7); //.<Decimal to Binary>
+
+}
